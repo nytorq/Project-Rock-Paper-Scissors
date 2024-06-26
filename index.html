@@ -8,7 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Open your DevTools console to play Rock, Paper, Scissors.</h1>
-    <button onClick="playRPS.startGame()">Play</button>
+    <h2>Rounds: <span id="roundValue">0</span></h2>
+    <h2 id="gameStatus"></h2>
+    <h2>User Score: <span id="userScoreValue">0</span></h2>
+    <h2>Computer Score: <span id="computerScoreValue">0</span></h2>
+    <button class="selection" id="rock">Rock</button>
+    <button class="selection" id="paper">Paper</button>
+    <button class="selection" id="scissors">Scissors</button>
 </body>
 </html>
+
+<!--
+    - Rewrite gameEvaluation to check if userScore or computerScore === 5. 
+    Then extract it out of the for loop.
+    - Extract roundEvaltion out the for loop, too. 
+    - Change roundEvaluation so that it changes the displayed scores
+    - Begin separating concerns: game mechanics and the UI. More specifically,
+    round values and scores should be moved away from startGame(). 
+    - Ensure that ScreenControllor gets run after every roundEvaluation 
+    and gameEvalution
+    - Begin wiring up .selection buttons to make the user's choice and run roundEvaluation()
+
+-->
